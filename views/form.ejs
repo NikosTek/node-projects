@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Δημιουργία Πελάτη</title>
+</head>
+<body>
+  <h2>Δημιουργία Νέου Πελάτη</h2>
+  <form action="/user" method="post">
+    <ul>
+      <li>
+        <label for="firstname">Όνομα:</label>
+        <input type="text" name="firstname" id="firstname">
+      </li>
+      <li>
+        <label for="lastname">Επίθετο:</label>
+        <input type="text" name="lastname" id="lastname">
+      </li>
+      <li>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+      </li>
+      <li>
+        <input type="radio" name="sex" value="male">Ανδρας
+        <input type="radio" name="sex" value="female">Γυναίκα
+      </li>
+      <li>
+        <input type="submit" value="Υποβολή">
+        <input type="reset" value="Καθάρισμα">
+      </li>
+    </ul>
+  </form>
+</body>
+</html>
